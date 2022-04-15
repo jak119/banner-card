@@ -1,6 +1,5 @@
 {
   "homeassistant": "2022.3",
   "render_readme": true,
-  "name" : "Lovelace banner card fork",
-  "filename" : "index.js"
+  "name" : "Lovelace banner card fork"
 }
