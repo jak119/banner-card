@@ -1,4 +1,8 @@
-# Lovelace banner card
+# Lovelace banner card fork
+
+**2022-04-15 Update**: Home Assistant 2022.3 made some UI changes ([GitHub Issue](https://github.com/nervetattoo/banner-card/issues/139) | [HA Blog](https://www.home-assistant.io/blog/2022/03/02/release-20223/#ui-upgrades)) that broke previous versions of this integration. The solutions generally accepted in the GitHub issue was to make a number of changes manually which I wasn't interested, and @matteocorti had [submitted a yet to be merged PR](https://github.com/nervetattoo/banner-card/pull/140). This fork integrates those changes and can easily be installed via the HACS UI without any manual effort.
+
+---
 
 A fluffy linkable banner with interactive glances to spice up your home dashboards
 
