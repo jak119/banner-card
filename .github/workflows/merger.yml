@@ -8,7 +8,7 @@ jobs:
   format-merge:
     runs-on: ubuntu-latest
     steps:          
-      - uses: zwaldowski/match-label-action@v1
+      - uses: zwaldowski/match-label-action@v3
         id: label
         with:
           allowed: >
