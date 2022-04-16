@@ -1,0 +1,30 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 13 * * 5"
+
+jobs:
+  validate_HACS:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v2"
+      - name: HACS validation
+        uses: "hacs/action@main"
+        with:
+          category: "plugin"
+  npm_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: npm install and test
+        run: |
+          npm install
+          npm test
